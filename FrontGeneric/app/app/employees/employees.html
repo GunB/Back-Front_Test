@@ -1,0 +1,23 @@
+<ul class="flex-container">
+    <li class="item-comic mini-comic" ng-repeat="(k,model) in employeesCtrl.show track by $index">
+        <h1>{{model.email}}</h1>
+        <section>
+            <img ng-src="{{'http://placehold.it/150x150?text=' + k}}">
+            <div class="side-desc">
+                <div class="description">
+                    {{model.password}}<br>
+                    {{model.username}}<br>
+                </div>
+            </div>
+        </section>
+    </li>
+</ul>
+
+<div class="continue-loading special" ng-show="employeesCtrl.more">
+    <div>
+        <span>
+            Load more items...
+        </span>
+        <button class="login-button" ng-click="employeesCtrl.show_data()">Load more employees</button>
+    </div>
+</div>

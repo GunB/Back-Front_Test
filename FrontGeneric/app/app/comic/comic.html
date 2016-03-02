@@ -1,0 +1,20 @@
+<div class="flex-container">
+    <div class="item-comic full-comic">
+        <h1>{{comicCtrl.comic.title}}</h1>
+        <section>
+            <img ng-src="{{'http://placehold.it/450x450?text=' + comicCtrl.comic.title}}">
+            <div class="side-desc">
+                <div class="description">{{comicCtrl.comic.body}}</div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="continue-loading">
+    <div>
+        <span>
+            Back to items...
+        </span>
+        <button class="login-button" ng-click="comicCtrl.goList()">Load more</button>
+    </div>
+</div>

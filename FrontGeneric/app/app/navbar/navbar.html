@@ -1,0 +1,19 @@
+<div id="nav-trigger">
+    <span>Menu</span>
+</div>
+<nav id="nav-main">
+    <ul>
+        <li ng-hide="navbarCtrl.is_log"><a href="#/login">Login</a></li>
+        <li ng-show="navbarCtrl.is_log"><a href="" ng-click="navbarCtrl.logoff()">Logoff</a></li>
+        <li><a href="#/list">Comic List</a></li>
+        <li><a href="#/employees">Employees</a></li>
+        <li ng-show="navbarCtrl.is_log">
+            <form id="search-special" name="search" ng-submit="navbarCtrl.submitForm()" novalidate>
+                <input type="search" ng-model="navbarCtrl.user.search"  placeholder="Search">
+                <button ng-click="navbarCtrl.update(navbarCtrl.user)"
+                        class="login-button" ng-disabled="search.$invalid">Go!</button>
+            </form>
+        </li>
+    </ul>
+</nav>
+<nav id="nav-mobile"></nav>

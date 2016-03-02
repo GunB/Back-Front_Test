@@ -1,0 +1,33 @@
+
+<div class="continue-loading create">
+
+    <div>        
+        <span>
+            Create new comic...
+        </span>
+        <a class="login-button" href="#/newComic">Create new comic</a>
+    </div>
+
+</div>
+
+<ul class="flex-container">
+    <li class="item-comic mini-comic" ng-repeat="(k,model) in listComicCtrl.show track by $index">
+        <h1>{{model.title}}</h1>
+        <section>
+            <img ng-src="{{'http://placehold.it/150x150?text=' + k}}">
+            <div class="side-desc">
+                <div class="description">{{model.body}}</div>
+                <a href="#/comic/{{k}}">See more...</a>
+            </div>
+        </section>
+    </li>
+</ul>
+
+<div class="continue-loading special" ng-show="listComicCtrl.more">
+    <div>
+        <span>
+            Load more items...
+        </span>
+        <button class="login-button" ng-click="listComicCtrl.show_data()">Load more</button>
+    </div>
+</div>

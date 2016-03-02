@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/02/2016, 06:35:45 PM
+    Author     : Heiner
+*/
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    @include display-flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item-comic{
+    @include border-radius($basic-border);
+    @extend %bg;
+    padding: $padding-default;
+    width: $grid-width;
+    margin-top: 10px;
+    color: $font-color-inverse;
+    text-align: center;
+}
+
+.item-comic {
+    section{
+        @include display-flex;
+        vertical-align: center;
+        justify-content: space-around;
+    }
+    h1 {
+        text-align: left;
+        font-weight: bold;
+        padding: $padding-default;
+
+        text-transform: capitalize;
+    }
+    &.mini-comic{
+        h1{
+            @include ellipsis-line(1);
+        }
+        .description{
+            @include ellipsis-line(4);
+        }
+    }
+    img{
+        width: 40%;
+        padding: $padding-default;
+        @include border-radius($basic-border);
+    }
+    .side-desc{
+        width: 50%;
+        text-align: left;
+        @include inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        a{
+            text-align: right;
+            color: $font-color-link;
+        }
+        .description{
+            display: inline-block;
+            text-align: justify;
+        }
+    }
+
+    &.full-comic{
+        width: 928px;
+    }
+}
+
+.continue-loading{
+    text-align: center;
+    margin-top: 15px;
+    >div{
+        @include inline-flex;
+        min-width: 200px;
+        align-items: center;
+        justify-content: space-around;
+        color: $font-color-inverse;
+        padding: $padding-default;
+        @include border-radius($basic-border);
+        @extend %bg;
+        margin-bottom: $footer-size;
+    }
+    &.create{
+        >div{
+            margin-bottom: 0px;
+        }
+    }
+    a{
+        padding: 0px;
+    }
+}
+
+.special.ng-hide:not(.ng-hide-animate) {
+    /* this is just another form of hiding an element */
+    display: block!important;
+    visibility: hidden;
+
+}

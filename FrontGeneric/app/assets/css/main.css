@@ -1,0 +1,726 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/02/2016, 01:40:44 PM
+    Author     : Heiner
+*/
+/* Import compass reset module */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline; }
+
+html {
+    line-height: 1; }
+
+ol, ul {
+    list-style: none; }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle; }
+
+q, blockquote {
+    quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+    border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/02/2016, 04:17:39 PM
+    Author     : Heiner
+*/
+/* Define some variables */
+/********** BASICS ************/
+/********** STYLE *************/
+/********** GRID COMICS *********/
+/********** MIXING ***************/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/02/2016, 04:18:59 PM
+    Author     : Heiner
+*/
+/********** BODY **************/
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    background-image: url('../images/inner.jpg?1455560219');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover; }
+
+/*********** FOOTER ****************/
+html, body {
+    height: 100%; }
+
+#root {
+    clear: both;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -250px; }
+#root #root_footer {
+    height: 250px; }
+
+#footer {
+    clear: both;
+    position: relative;
+    height: 250px; }
+
+#footer {
+    height: auto; }
+
+.footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    margin-top: 80px; }
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top; }
+
+/* Footer left */
+.footer-distributed .footer-left {
+    width: 40%; }
+
+/* The company logo */
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0; }
+
+.footer-distributed h3 span {
+    color: #5383d3; }
+
+/* Footer links */
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0; }
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit; }
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0; }
+
+/* Footer Center */
+.footer-distributed .footer-center {
+    width: 35%; }
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle; }
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px; }
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0; }
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2; }
+
+.footer-distributed .footer-center p a {
+    color: #5383d3;
+    text-decoration: none; }
+
+/* Footer Right */
+.footer-distributed .footer-right {
+    width: 20%; }
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0; }
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+
+.footer-distributed .footer-icons {
+    margin-top: 25px; }
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px; }
+
+/* If you don't want the footer to be responsive, remove these media queries */
+@media (max-width: 880px) {
+    .footer-distributed {
+        font: bold 14px sans-serif; }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center; }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0; } }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/02/2016, 06:35:45 PM
+    Author     : Heiner
+*/
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center; }
+
+.item-comic {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 400px;
+    margin-top: 10px;
+    color: #fff;
+    text-align: center; }
+
+.item-comic section {
+    display: -webkit-flex;
+    display: flex;
+    vertical-align: center;
+    justify-content: space-around; }
+.item-comic h1 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px;
+    text-transform: capitalize; }
+.item-comic.mini-comic h1 {
+    margin: 0;
+    height: 21px;
+    /* Fallback for non-webkit */
+    font-size: 15px;
+    line-height: 1.4;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+.item-comic.mini-comic .description {
+    margin: 0;
+    height: 84px;
+    /* Fallback for non-webkit */
+    font-size: 15px;
+    line-height: 1.4;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+.item-comic img {
+    width: 40%;
+    padding: 5px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; }
+.item-comic .side-desc {
+    width: 50%;
+    text-align: left;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center; }
+.item-comic .side-desc a {
+    text-align: right;
+    color: #00a1d2; }
+.item-comic .side-desc .description {
+    display: inline-block;
+    text-align: justify; }
+.item-comic.full-comic {
+    width: 928px; }
+
+.continue-loading {
+    text-align: center;
+    margin-top: 15px; }
+.continue-loading > div {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    min-width: 200px;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    padding: 5px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 250px; }
+.continue-loading.create > div {
+    margin-bottom: 0px; }
+.continue-loading a {
+    padding: 0px; }
+
+.special.ng-hide:not(.ng-hide-animate) {
+    /* this is just another form of hiding an element */
+    display: block !important;
+    visibility: hidden; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/02/2016, 04:04:58 PM
+    Author     : Heiner
+*/
+.item-comic, .continue-loading > div, .login, .login-submit, .login-submit:before, .login-submit:after {
+    background: #373737; }
+
+a {
+    color: #00a1d2;
+    text-decoration: none; }
+a:hover {
+    text-decoration: underline; }
+
+.login {
+    position: relative;
+    margin: 80px auto;
+    width: 400px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: 300;
+    color: #a8a7a8;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; }
+.login p {
+    margin: 0 0 10px; }
+
+input, button, label {
+    font-size: 15px;
+    font-weight: 300;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+input[type=text], input[type=email], input[type=password] {
+    padding: 0 10px;
+    width: 300px;
+    height: 40px;
+    color: #bbb;
+    text-shadow: 1px 1px 1px black;
+    background: rgba(0, 0, 0, 0.16);
+    border: 0;
+    border-radius: 5px;
+    -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06); }
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
+    color: white;
+    background: rgba(0, 0, 0, 0.1);
+    outline: 0; }
+
+label {
+    float: left;
+    width: 100px;
+    line-height: 40px;
+    padding-right: 10px;
+    font-weight: 100;
+    text-align: right;
+    letter-spacing: 1px; }
+
+.forgot-password {
+    padding-left: 100px;
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 1px; }
+
+.login-submit {
+    position: absolute;
+    top: 32px;
+    right: 5px;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    border-radius: 32px;
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.35); }
+.login-submit:before, .login-submit:after {
+    content: '';
+    z-index: 1;
+    position: absolute; }
+.login-submit:before {
+    top: 28px;
+    left: -4px;
+    width: 4px;
+    height: 10px;
+    -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.06); }
+.login-submit:after {
+    top: -4px;
+    bottom: -4px;
+    right: -4px;
+    width: 36px; }
+
+.login-button {
+    position: relative;
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    text-indent: 120%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: none;
+    border: 0;
+    border-radius: 24px;
+    cursor: pointer;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+    /* Must use another pseudo element for the gradient background because Webkit */
+    /* clips the background incorrectly inside elements with a border-radius.     */ }
+.login-button:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background: #00a2d3;
+    border-radius: 24px;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYTJkMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBkNzc5NiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00a2d3), color-stop(100%, #0d7796));
+    background-image: -moz-linear-gradient(top, #00a2d3, #0d7796);
+    background-image: -webkit-linear-gradient(top, #00a2d3, #0d7796);
+    background-image: linear-gradient(to bottom, #00a2d3, #0d7796);
+    -moz-box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16); }
+.login-button:active:before {
+    background: #0591ba;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1OTFiYSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwYTJkMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0591ba), color-stop(100%, #00a2d3));
+    background-image: -moz-linear-gradient(top, #0591ba, #00a2d3);
+    background-image: -webkit-linear-gradient(top, #0591ba, #00a2d3);
+    background-image: linear-gradient(to bottom, #0591ba, #00a2d3); }
+.login-button:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    width: 25px;
+    height: 19px;
+    background: url('../images/arrow.png?1455560219') 0 0 no-repeat; }
+
+::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+
+.lt-ie9 input[type=text], .lt-ie9 input[type=password] {
+    line-height: 40px;
+    background: #282828; }
+.lt-ie9 .login-submit {
+    position: absolute;
+    top: 12px;
+    right: -28px;
+    padding: 4px; }
+.lt-ie9 .login-submit:before, .lt-ie9 .login-submit:after {
+    display: none; }
+.lt-ie9 .login-button {
+    line-height: 48px; }
+.lt-ie9 .about {
+    background: #313131; }
+
+.new-user h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: large; }
+
+/* =Nav
+-------------------------------------------------------------- */
+#nav-trigger {
+    display: none;
+    text-align: center; }
+#nav-trigger span {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #373737;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase; }
+#nav-trigger span:after {
+    display: inline-block;
+    margin-left: 10px;
+    width: 20px;
+    height: 10px;
+    content: "";
+    border-left: solid 10px transparent;
+    border-top: solid 10px #fff;
+    border-right: solid 10px transparent; }
+#nav-trigger span:hover {
+    background-color: #2a2a2a; }
+#nav-trigger span.open:after {
+    border-left: solid 10px transparent;
+    border-top: none;
+    border-bottom: solid 10px #fff;
+    border-right: solid 10px transparent; }
+
+nav {
+    margin-bottom: 30px; }
+
+nav#nav-main {
+    background-color: #373737;
+    padding: 10px 0; }
+nav#nav-main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+nav#nav-main li {
+    display: inline-block;
+    border-right: solid 1px #1e1e1e;
+    padding: 0 5px; }
+nav#nav-main li:last-child {
+    border-right: none; }
+nav#nav-main a {
+    display: block;
+    color: white;
+    padding: 10px 30px; }
+nav#nav-main a:hover {
+    background-color: #2a2a2a;
+    color: #fff; }
+
+nav#nav-mobile {
+    position: relative;
+    display: none; }
+nav#nav-mobile ul {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #373737; }
+nav#nav-mobile ul.expanded {
+    z-index: 10; }
+nav#nav-mobile li {
+    display: block;
+    padding: 5px 0;
+    margin: 0 5px;
+    border-bottom: solid 1px #1e1e1e; }
+nav#nav-mobile li:last-child {
+    border-bottom: none; }
+nav#nav-mobile a {
+    display: block;
+    color: white;
+    padding: 10px 30px; }
+nav#nav-mobile a:hover {
+    background-color: #2a2a2a;
+    color: #fff; }
+
+/* =Sections
+-------------------------------------------------------------- */
+section h1 {
+    margin-bottom: 10px; }
+
+section p {
+    margin-bottom: 30px; }
+section p:last-child {
+    margin-bottom: 0; }
+
+/* =Media Queries
+-------------------------------------------------------------- */
+@media all and (max-width: 900px) {
+    #nav-trigger {
+        display: block; }
+
+    nav#nav-main {
+        display: none; }
+
+    nav#nav-mobile {
+        display: block; } }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15/02/2016, 10:51:56 AM
+    Author     : Heiner
+*/
+input, button {
+    outline: none; }
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%; }
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+    display: none; }
+
+input[type=search] {
+    background: #ededed url(http://www.leburbivierphoto.com/assets/themes/default/images/search.icon.png) no-repeat 9px center;
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    width: 55px;
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s; }
+
+input[type=search]:focus {
+    width: 130px;
+    background-color: #fff;
+    border-color: #00a1d2;
+    -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+    -moz-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+    box-shadow: 0 0 5px rgba(109, 207, 246, 0.5); }
+
+input:-moz-placeholder {
+    color: #999; }
+
+input::-webkit-input-placeholder {
+    color: #999; }
+
+/* search-special */
+#search-special {
+    display: inline-block;
+    margin-right: 5px; }
+#search-special input [type=search] {
+    width: 15px;
+    padding-left: 10px;
+    color: transparent;
+    cursor: pointer; }
+#search-special input [type=search] :hover {
+    background-color: #fff; }
+#search-special input [type=search] :focus {
+    width: 130px;
+    padding-left: 32px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto; }
+#search-special input :-moz-placeholder {
+    color: transparent; }
+#search-special input ::-webkit-input-placeholder {
+    color: transparent; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/02/2016, 07:24:38 PM
+    Author     : Heiner
+*/
+input.ng-invalid.ng-touched {
+    background: #FA787E; }
+
+/*# sourceMappingURL=main.css.map */

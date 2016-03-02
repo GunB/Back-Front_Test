@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/02/2016, 04:17:39 PM
+    Author     : Heiner
+*/
+
+$inputHeight: 40px;
+$labelWidth: 100px;
+
+/* Define some variables */
+
+/********** BASICS ************/
+$blueprint-grid-columns : 24;
+$blueprint-grid-width   : 30px;
+$blueprint-grid-margin  : 10px;
+
+$background-color       : #373737;
+
+$basic-border           : 10px;
+$font-color             : #333;
+$font-color-link        : #00a1d2;
+$font-color-inverse     : #fff;
+$font-family            : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+/********** STYLE *************/
+
+$background-inner       : image-url("inner.jpg");
+$background-outter      : image-url("outter.jpg");
+
+$header-bg              : #222;
+$menu-width             : 250px!default;
+
+$footer-size            : 250px;
+
+/********** GRID COMICS *********/
+
+$grid-width             : 400px;
+$padding-default        : 5px;
+
+
+/********** MIXING ***************/
+
+@mixin inline-flex {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+@mixin ellipsis-line($lines-to-show: 4, $font-size: 15px, $line-height: 1.4){
+    margin: 0;
+    height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+
+    font-size: $font-size;
+    line-height: $line-height;
+    -webkit-line-clamp: $lines-to-show;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

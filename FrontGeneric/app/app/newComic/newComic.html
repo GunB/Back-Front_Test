@@ -1,0 +1,27 @@
+<div class="new-user">
+    <h1>
+        Create the new COMIC
+    </h1>
+    <form novalidate class="login" ng-submit="newComicCtrl.submitForm()" name="newComic">
+        <p>
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title" ng-model="newComicCtrl.user.title"
+                   placeholder="The name of your new comic">
+        </p>
+
+        <p>
+            <label for="body">Comments:</label>
+            <input type="text" name="body" ng-minlength="4" id="body"
+                   ng-model="newComicCtrl.user.body" placeholder="Put your comment">
+        </p>
+
+        <p class="login-submit">
+            <button ng-click="newComicCtrl.update(newComicCtrl.user)"
+                    class="login-button" ng-disabled="newComic.$invalid">Login</button>
+        </p>
+
+        <p class="forgot-password"></p>
+    </form>
+</div>
+
+<pre>{{newComicCtrl.user| json}}</pre>

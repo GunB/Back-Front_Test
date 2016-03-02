@@ -1,0 +1,22 @@
+<div>
+    <form novalidate class="login" ng-submit="loginCtrl.submitForm()" name="userForm">
+        <p>
+            <label for="login">Email:</label>
+            <input type="text" name="login" id="login" ng-model="loginCtrl.user.username"
+                   placeholder="Username">
+        </p>
+
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" ng-minlength="4" 
+                   id="password" ng-model="loginCtrl.user.password" placeholder="Put your password">
+        </p>
+
+        <p class="login-submit">
+            <button ng-click="loginCtrl.update(loginCtrl.user)"
+                    class="login-button" ng-disabled="userForm.$invalid">Login</button>
+        </p>
+
+        <p class="forgot-password"><a href="#/newEmployee">Do you need to create a user?</a></p>
+    </form>
+</div>

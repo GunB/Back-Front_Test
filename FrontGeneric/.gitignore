@@ -1,0 +1,4 @@
+!app/**
+!/app/bootstrap/**/
+node_modules
+/nbproject/private/
